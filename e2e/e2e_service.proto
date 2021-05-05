@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package e2e;
 
-option go_package = ".;e2e";
+option go_package = "github.com/mitchellh/protoc-gen-go-json/e2e;e2e";
 
 import "e2e.proto";
 
 service E2E {
-  rpc Hello(Basic) returns (Basic) {}
+    rpc Hello(Basic) returns (Basic) {}
 }
